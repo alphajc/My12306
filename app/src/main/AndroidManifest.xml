@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.neuedu.my12306"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/res03_attpic_brief"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.Holo.Light">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/main" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login">
+
+            <!-- android:theme="@android:style/Theme.Dialog" -->
+        </activity>
+        <activity
+            android:name=".sub.MyConnectActivity"
+            android:label="@string/title_activity_my_connect" />
+        <activity
+            android:name=".sub.MyAccountActivity"
+            android:label="@string/title_activity_my_account" />
+        <activity
+            android:name=".sub.MyKeysActivity"
+            android:label="@string/title_activity_my_keys" />
+        <activity
+            android:name=".LauncherActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".sub.AddContactActivity"
+            android:label="@string/title_activity_add_contact" />
+        <activity
+            android:name=".sub.EditContactActivity"
+            android:label="@string/title_activity_edit_contact" />
+        <!--
+             ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information.
+        -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".stationlist.StationActivity"
+            android:label="@string/title_activity_station" />
+        <activity
+            android:name=".book.BookActivity"
+            android:label="@string/title_activity_book" />
+        <activity
+            android:name=".book.Book2Activity"
+            android:label="@string/title_activity_book2" />
+        <activity
+            android:name=".book.Book3Activity"
+            android:label="@string/title_activity_book3" />
+        <activity
+            android:name=".book.Book4Activity"
+            android:label="@string/title_activity_book4" />
+        <activity
+            android:name=".book.Book5Activity"
+            android:label="@string/title_activity_book5" />
+        <activity
+            android:name=".book.AddTravellerActivity"
+            android:label="@string/title_activity_add_traveller" />
+        <activity
+            android:name=".order.OrderManageActivity"
+            android:label="@string/title_activity_order_manage"></activity>
+    </application>
+
+</manifest>

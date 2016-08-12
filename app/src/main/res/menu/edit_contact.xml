@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mn_connect_del"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/del_user_25"
+        android:title="@string/mn_connect_del" />
+
+</menu>

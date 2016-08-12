@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.neuedu.my12306.book.Book3Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="北京"
+                android:id="@+id/textViewSource3"
+                android:textSize="24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="07:15"
+                android:id="@+id/textViewStartTime3"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+            <TextView
+                android:id="@+id/textViewTrainNum3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="D5"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearance"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/to"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/textViewDateTime3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2014-7-1(0日)"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="大连"
+                android:id="@+id/textViewDestination3"
+                android:textSize="24dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="11:55"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textViewStopTime3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="无座(39张)"
+            android:id="@+id/textViewSeat_3" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="￥154.0"
+            android:textColor="@android:color/holo_orange_dark"
+            android:id="@+id/textViewSeatPrice_3"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="+添加联系人"
+        android:textColor="@android:color/holo_orange_dark"
+        android:background="#bebebe"
+        android:id="@+id/textViewAdd"
+        android:layout_below="@+id/linearLayout2"/>
+    <ListView
+        android:id="@+id/listViewMyContact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewAdd"
+        android:layout_above="@+id/linearLayout3">
+
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linearLayout3">
+        <TextView
+            android:id="@+id/textViewTotal"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="订单总额:￥308.0元"
+            android:textColor="@color/white"
+            android:background="@color/blue"
+            android:textSize="24dp"
+            android:gravity="center_vertical"/>
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:background="@color/orange"/>
+    </LinearLayout>
+</RelativeLayout>

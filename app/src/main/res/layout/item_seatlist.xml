@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textViewSeatType"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:text="无座"/>
+    <TextView
+        android:id="@+id/textViewSeatNum"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="39张"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/textViewSeatPrice"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="￥154.0"
+        android:textColor="@android:color/holo_orange_dark"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/buttonSeat"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="预订"
+        android:background="@color/blue"/>
+</LinearLayout>
